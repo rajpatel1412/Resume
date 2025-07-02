@@ -1,0 +1,55 @@
+.gradient-background {
+  background: linear-gradient(300deg, #EB7167, #67A5EB, #68EAEB);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.white-text{
+    color: white !important;
+}
+
+.icon-square {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.75rem;
+}
+
+/* .carousel {
+    height: 400px !important;
+} */
+
+/* .backdrop {
+    background-color: #67A5EB;
+} */
+
+/* .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    width: 100%;
+} */
+
+.carousel-item {
+height: 500px; /* Set the fixed height of the carousel */
+/* background-color: #000;  */
+
+/* background: linear-gradient(300deg, #EB7167, #67A5EB, #68EAEB);
+background-size: 180% 180%;
+animation: gradient-animation 18s ease infinite; */
+
+}
+
+.carousel-item img {
+max-height: 100%;
+max-width: 100%;
+object-fit: contain;
+}

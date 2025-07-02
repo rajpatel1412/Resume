@@ -3,18 +3,89 @@
     <head>
         <meta charset="UTF-8">
         <title>Contact</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+        <link href="../styles.css" rel="stylesheet">
     </head>
     <body>
-        <h1>Contact Me</h1>
-        <hr />
-        <p>Phone: +1 (778) - 323 - 1412</p>
-        <p>Email: rajhgsp@gmail.com</p>
-        <p>Address:</p>
-        <p>
-        164 McConnachie Place<br />
-        Penticton, BC<br />
-        Canada <br />
-        V2A 8H4<br />
-        </p>
+        <section id="title">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Raj's Portfolio</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                            <a class="nav-link" href="./projects.html">Projects</a>
+                            <a class="nav-link" href="./experience.html">Experience</a>
+                            <a class="nav-link" href="./education.html">Education</a>
+                            <a class="nav-link" href="./technical_skills.html">Technical Skills</a>
+                            <a class="nav-link active" href="./contact.html">Contact me </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="container">
+                <h1 class="pt-5 border-bottom pb-2">Contact Me!</h1>
+            </div>
+        </section>
+        <section id="Contact">
+            <div class="container my-5"> 
+                <div class="row p-4 pb-0 pe-lg-0 pt-lg-3 align-items-center rounded-3 border shadow-lg"> 
+                    <div class="col-lg-12 p-3 p-lg-5 pt-lg-3"> 
+                        <h2 class="text-body-emphasis border-bottom pb-2">Contact</h2> 
+                        <p class="lead">
+                            Raj Patel <br />
+                            Phone: +1 (778) - 323 - 1412 <br />
+                            Email: rajhgsp@gmail.com
+                        </p> 
+                    </div> 
+                </div> 
+            </div>
+        </section>
+        <section id="email-form">
+            <div class="container my-5"> 
+                <div class="row p-4 pb-0 pe-lg-0 pt-lg-3 align-items-center rounded-3 border shadow-lg"> 
+                    <div class="col-lg-6 p-3 p-lg-5 pt-lg-3"> 
+                        <h2 class="text-body-emphasis pb-3">Send Me a Message</h2>
+                        <form>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label"><p class="lead">Email address</p></label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label"><p class="lead">Message</p></label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-light">Submit</button>
+                        </form>
+                    </div> 
+                </div> 
+            </div>
+            
+        </section>
+        <footer>
+            <div class="container"> 
+                <footer class="d-flex flex-wrap justify-content-between align-items-center py-3  border-top"> 
+                    <p class="col-md-4 mb-0 text-body-secondary">© 2025 Raj Patel</p> 
+                    <!-- <div class="d-grid gap-2 d-md-flex justify-content-md-start"> 
+                        <button type="button" href="./public/contact.html" class="btn btn-primary btn-light btn-lg px-4 me-md-2">Hire Me!</button> 
+                    </div>  -->
+                    <a href="./contact.html" class="btn btn-primary btn-light">Hire Me!</a>
+                    <ul class="nav col-md-4 justify-content-end"> 
+                        <li class="nav-item"><a href="../index.html" class="nav-link px-2 text-body-secondary">Home</a></li> 
+                        <li class="nav-item"><a href="./projects.html" class="nav-link px-2 text-body-secondary">Projects</a></li> 
+                        <li class="nav-item"><a href="./experience.html" class="nav-link px-2 text-body-secondary">Experience</a></li> 
+                        <li class="nav-item"><a href="./education.html" class="nav-link px-2 text-body-secondary">Education</a></li> 
+                        <li class="nav-item"><a href="./technical_skills.html" class="nav-link px-2 text-body-secondary">Technical Skills</a></li> 
+                    </ul> 
+                </footer> 
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
     </body>
 </html>

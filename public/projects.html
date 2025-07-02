@@ -3,77 +3,175 @@
     <head>
         <meta charset="UTF-8">
         <title>Projects</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+        <link href="../styles.css" rel="stylesheet">
     </head>
     <body>
-        <h1>Projects</h1>
-        <hr />
-        <ul>
-            <li>
-                <h3>Drive-through Automated Order Taker</h3>
-                <ul>
-                    <li>
-                        <p>
-                        Designed an automated pipeline to receive orders, 
-                        process them using customized LLM techniques, and 
-                        input them into the system, eliminating the need for 
-                        dedicated human order-taker and lowering order-taking 
-                        time by 24 seconds. 
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-                        Utilized advanced AI models and techniques to create
-                        a pleasant experience for customers, improving 
-                        customer satisfaction in-store by 21%. 
-                        </p>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <h3>Bark Buddy | Affective Computing Pet Simulator</h3>
-                <ul>
-                    <li>
-                        <p>
-                        Designed a 3D pet dog using Unity, python and affective 
-                        machine learning models (object detection, facial 
-                        expression inference, audio capture, denoising, tone 
-                        inference and semantic analysis) to target loneliness 
-                        in old age, resulting in a 60% adoption rate in a 
-                        conducted survey. 
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-                        Produced an API between the Python interpreter and Unity 
-                        to allow communication of inference data and captured 
-                        signals, reducing latency by 23%. 
-                        </p>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <h3>Sign-ifier | Embedded Software Project</h3>
-                <ul>
-                    <li>
-                        <p>
-                        Spearheaded an Agile team of 3 members to produce an 
-                        embedded Raspberry Pi/Beagle Bone system that captures 
-                        video of ASL signs, infers the sign using a machine 
-                        learning model, and outputs the result to a local 
-                        server-powered website, resulting in a 76% forecasted 
-                        first-year adoption rate. 
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-                        Implemented multiple socket communication protocols to 
-                        bridge the gap between different embedded devices (camera, 
-                        screen, Beagle Bone/Raspberry Pi), resulting in a 14% 
-                        decrease in latency. 
-                        </p>
-                    </li>
-                </ul>
-            </li>
-        </ul>
+        <section id="projects-carousel">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Raj's Portfolio</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                            <a class="nav-link active" href="./projects.html">Projects</a>
+                            <a class="nav-link" href="./experience.html">Experience</a>
+                            <a class="nav-link" href="./education.html">Education</a>
+                            <a class="nav-link" href="./technical_skills.html">Technical Skills</a>
+                            <a class="nav-link" href="./contact.html">Contact me </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div id="carouselExampleCaptions" class="carousel slide gradient-background" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active gradient-background">
+                        <img src="../assets/images/Drive-Thru-image.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Drive-through Order Taker</h5>
+                            <p>A LLM based embedded system to automate drive-thru order taking.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item gradient-background">
+                        <img src="../assets/images/bark-buddy.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Bark Buddy</h5>
+                            <p>A simulated virtual pet with a unique interface.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item gradient-background">
+                        <img src="../assets/images/Sign-ifier.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Sign-ifier</h5>
+                            <p>An embedded visual computing system to decipher ASL gestures.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+        <section id="title">
+            <div class="container">
+                <h1 class="pt-5 border-bottom pb-2">Projects</h1>
+            </div>
+            
+        </section>
+        <section id="Drive-through">
+            <div class="container my-5"> 
+                <div class="row p-4 pb-0 pe-lg-0 pt-lg-3 align-items-center rounded-3 border shadow-lg"> 
+                    <div class="col-lg-12 p-3 p-lg-5 pt-lg-3"> 
+                        <h2 class="text-body-emphasis">Drive-through Automated Order Taker</h2> 
+                        <ul>
+                            <li>
+                                <p class="lead">
+                                Designed an automated pipeline to receive orders, 
+                                process them using customized LLM techniques, and 
+                                input them into the system, eliminating the need for 
+                                dedicated human order-taker and lowering order-taking 
+                                time by 24 seconds. 
+                                </p>
+                            </li>
+                            <li>
+                                <p class="lead">
+                                Utilized advanced AI models and techniques to create
+                                a pleasant experience for customers, improving 
+                                customer satisfaction in-store by 21%. 
+                                </p>
+                            </li>
+                        </ul>
+                    </div> 
+                </div> 
+        </section>
+        <section id="bark-buddy">
+            <div class="container my-5"> 
+                <div class="row p-4 pb-0 pe-lg-0 pt-lg-3 align-items-center rounded-3 border shadow-lg"> 
+                    <div class="col-lg-12 p-3 p-lg-5 pt-lg-3"> 
+                        <h2 class="text-body-emphasis">Bark Buddy | Affective Computing Pet Simulator</h2> 
+                        <ul>
+                            <li>
+                                <p class="lead">
+                                Designed a 3D pet dog using Unity, python and affective 
+                                machine learning models (object detection, facial 
+                                expression inference, audio capture, denoising, tone 
+                                inference and semantic analysis) to target loneliness 
+                                in old age, resulting in a 60% adoption rate in a 
+                                conducted survey. 
+                                </p>
+                            </li>
+                            <li>
+                                <p class="lead">
+                                Produced an API between the Python interpreter and Unity 
+                                to allow communication of inference data and captured 
+                                signals, reducing latency by 23%.  
+                                </p>
+                            </li>
+                        </ul>
+                    </div> 
+                </div> 
+        </section>
+        <section id="sign-ifier">
+            <div class="container my-5"> 
+                <div class="row p-4 pb-0 pe-lg-0 pt-lg-3 align-items-center rounded-3 border shadow-lg"> 
+                    <div class="col-lg-12 p-3 p-lg-5 pt-lg-3"> 
+                        <h2 class="text-body-emphasis">Sign-ifier | Embedded Software Project</h2> 
+                        <ul>
+                            <li>
+                                <p class="lead">
+                                Spearheaded an Agile team of 3 members to produce an 
+                                embedded Raspberry Pi/Beagle Bone system that captures 
+                                video of ASL signs, infers the sign using a machine 
+                                learning model, and outputs the result to a local 
+                                server-powered website, resulting in a 76% forecasted 
+                                first-year adoption rate. 
+                                </p>
+                            </li>
+                            <li>
+                                <p class="lead">
+                                Implemented multiple socket communication protocols to 
+                                bridge the gap between different embedded devices (camera, 
+                                screen, Beagle Bone/Raspberry Pi), resulting in a 14% 
+                                decrease in latency.  
+                                </p>
+                            </li>
+                        </ul>
+                    </div> 
+                </div> 
+        </section>
+        <footer>
+            <div class="container"> 
+                <footer class="d-flex flex-wrap justify-content-between align-items-center py-3  border-top"> 
+                    <p class="col-md-4 mb-0 text-body-secondary">© 2025 Raj Patel</p> 
+                    <!-- <div class="d-grid gap-2 d-md-flex justify-content-md-start"> 
+                        <button type="button" href="./public/contact.html" class="btn btn-primary btn-light btn-lg px-4 me-md-2">Hire Me!</button> 
+                    </div>  -->
+                    <a href="./contact.html" class="btn btn-primary btn-light">Hire Me!</a>
+                    <ul class="nav col-md-4 justify-content-end"> 
+                        <li class="nav-item"><a href="../index.html" class="nav-link px-2 text-body-secondary">Home</a></li> 
+                        <li class="nav-item"><a href="./projects.html" class="nav-link px-2 text-body-secondary">Projects</a></li> 
+                        <li class="nav-item"><a href="./experience.html" class="nav-link px-2 text-body-secondary">Experience</a></li> 
+                        <li class="nav-item"><a href="./education.html" class="nav-link px-2 text-body-secondary">Education</a></li> 
+                        <li class="nav-item"><a href="./technical_skills.html" class="nav-link px-2 text-body-secondary">Technical Skills</a></li> 
+                    </ul> 
+                </footer> 
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
     </body>
 </html>
